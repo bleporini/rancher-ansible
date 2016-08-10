@@ -63,7 +63,7 @@ Use the configure_host.yml
 
 You can bootstrap the machine for the first time with the following command
 
-``` /ansible-playbook_wrapper configure_host.yml -u genericaccount -Kk ```
+``` ./ansible-playbook_wrapper configure_host.yml -u genericaccount -Kk ```
 
 This ansible install
 
@@ -76,7 +76,7 @@ This ansible install
 
 All the next time you must launch 
 
-``` /ansible-playbook_wrapper configure_host.yml -K ```
+``` ./ansible-playbook_wrapper configure_host.yml -K ```
 
 Docker will be installed in /var/lib/docker folder with a lvm partition by default it will create it on /dev/sdb but you can configure it in you inventory file by overriding docker_disks variable.
 ```
